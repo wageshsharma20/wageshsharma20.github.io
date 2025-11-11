@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wagesh Sharma — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+ 
+    <header>
+      <div class="logo">WS</div>
+      <div>
+        <h1>Wagesh Sharma</h1>
+        <p>Computer Science Student • Web Developer</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="main-grid">
+   
+      <div>
+ 
+        <section id="about" class="box">
+          <h2>About</h2>
+          <p>I'm a computer science student, currently studying in DTU. </p>
+          <p>I enjoy learning new technologies and solving problems using modern web standards.</p>
+          <p>I'm passionate about web development and programming. I focus on building clean, functional websites.</p>
+        </section>
+
+        <section id="skills" class="box">
+          <h2>Skills</h2>
+          <div class="tags">
+            <span>HTML & CSS</span>
+            <span>JavaScript</span>
+            <span>C Programming</span>
+            <span>Web Design</span>
+            <span>Problem Solving</span>
+          </div>
+        </section>
+
+        <section id="projects" class="box">
+          <h2>Projects</h2>
+          <div class="project-list">
+            <div class="project">
+              <div class="project-icon">1</div>
+              <div>
+                <h4>Calculator</h4>
+                <p>A simple calculator using HTML and JavaScript.</p>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-icon">2</div>
+              <div>
+                <h4>Student Record System</h4>
+                <p>A C program to store student information.</p>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-icon">3</div>
+              <div>
+                <h4>Portfolio Website</h4>
+                <p>This website made with HTML and CSS.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+    
+        <div class="profile-card">
+          <img src="profile.jpg" alt="Wagesh Sharma">
+          <h3>Wagesh Sharma</h3>
+          <p>BTech Computer Science Student, DTU</p>
+          <p>Based in Delhi, India</p>
+        </div>
+
+     
+        <section id="contact" class="box">
+          <h2>Contact Me</h2>
+          
+          <div class="contact-item">
+            <div class="icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:wageshsharma20@gmail.com">wageshsharma20@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">📱</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+917404554377">+91 7404554377</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">💼</div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/wagesh-sharma-b0983a375/" target="_blank">Connect with me</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">💻</div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/wageshsharma20" target="_blank">View my work</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="box small">
+          <p>Always open to opportunities and collaborations!</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>© <span id="year"></span> Wagesh Sharma</footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
