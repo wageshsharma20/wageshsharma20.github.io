@@ -285,12 +285,16 @@ h2 i {
   overflow: hidden;
 }
 
+/* --- Updated Profile Image CSS --- */
 .profile-img-container img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
   border: 4px solid var(--bg-dark);
+  
+  /* The Fix: object-fit scales the image, object-position moves it */
+  object-fit: cover; 
+  object-position: center 20%; /* Adjusted to 20% to show more of the top/face */
 }
 
 .profile-card h3 {
