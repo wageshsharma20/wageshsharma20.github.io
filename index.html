@@ -2,132 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Wagesh Sharma — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wagesh Sharma — Software Engineer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
- 
-    <header>
-      <div class="logo">WS</div>
-      <div>
-        <h1>Wagesh Sharma</h1>
-        <p>Computer Science Student • Web Developer</p>
+    
+    <header class="glass-panel main-header slide-up">
+      <div class="header-content">
+        <div class="logo-group">
+          <div class="logo">WS</div>
+          <div class="header-titles">
+            <h1>Wagesh Sharma</h1>
+            <p>CS Student @ DTU • Web Architect</p>
+          </div>
+        </div>
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
 
     <div class="main-grid">
-   
-      <div>
- 
-        <section id="about" class="box">
-          <h2>About</h2>
-          <p>I'm a computer science student, currently studying in DTU. </p>
-          <p>I enjoy learning new technologies and solving problems using modern web standards.</p>
-          <p>I'm passionate about web development and programming. I focus on building clean, functional websites.</p>
+      
+      <main>
+        <section id="about" class="glass-panel slide-up" style="animation-delay: 0.1s;">
+          <h2><i class="fa-solid fa-user-astronaut"></i> About Me</h2>
+          <div class="text-content">
+            <p>I'm a computer science enthusiast currently pursuing my BTech at <strong>Delhi Technological University (DTU)</strong>.</p>
+            <p>My focus is on creating seamless digital experiences using modern web standards. I enjoy the challenge of turning complex logic into clean, functional code.</p>
+          </div>
         </section>
 
-        <section id="skills" class="box">
-          <h2>Skills</h2>
+        <section id="skills" class="glass-panel slide-up" style="animation-delay: 0.2s;">
+          <h2><i class="fa-solid fa-code"></i> Technical Arsenal</h2>
           <div class="tags">
-            <span>HTML & CSS</span>
-            <span>JavaScript</span>
-            <span>C Programming</span>
-            <span>Web Design</span>
-            <span>Problem Solving</span>
+            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript ES6+</span>
+            <span class="tag"><i class="fa-solid fa-c"></i> C/C++ Programming</span>
+            <span class="tag"><i class="fa-brands fa-html5"></i> Semantic HTML</span>
+            <span class="tag"><i class="fa-solid fa-layer-group"></i> CSS Architecture</span>
+            <span class="tag"><i class="fa-solid fa-terminal"></i> Problem Solving</span>
           </div>
         </section>
 
-        <section id="projects" class="box">
-          <h2>Projects</h2>
+        <section id="projects" class="glass-panel slide-up" style="animation-delay: 0.3s;">
+          <h2><i class="fa-solid fa-rocket"></i> Featured Projects</h2>
           <div class="project-list">
-            <div class="project">
-              <div class="project-icon">1</div>
-              <div>
-                <h4>Calculator</h4>
-                <p>A simple calculator using HTML and JavaScript.</p>
+            
+            <a href="#" class="project-card">
+              <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+              <div class="project-info">
+                <h4>Smart Calculator</h4>
+                <p>Advanced calculation engine built with vanilla JS.</p>
               </div>
-            </div>
-            <div class="project">
-              <div class="project-icon">2</div>
-              <div>
-                <h4>Student Record System</h4>
-                <p>A C program to store student information.</p>
+              <i class="fa-solid fa-arrow-right project-arrow"></i>
+            </a>
+
+            <a href="#" class="project-card">
+              <div class="project-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="project-info">
+                <h4>Record Management System</h4>
+                <p>High-performance CLI tool developed in C.</p>
               </div>
-            </div>
-            <div class="project">
-              <div class="project-icon">3</div>
-              <div>
-                <h4>Portfolio Website</h4>
-                <p>This website made with HTML and CSS.</p>
+              <i class="fa-solid fa-arrow-right project-arrow"></i>
+            </a>
+
+            <a href="#" class="project-card">
+              <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+              <div class="project-info">
+                <h4>Modern Portfolio</h4>
+                <p>Responsive design featuring Glassmorphism UI.</p>
               </div>
-            </div>
+              <i class="fa-solid fa-arrow-right project-arrow"></i>
+            </a>
+
           </div>
         </section>
-      </div>
+      </main>
 
       <aside>
-    
-        <div class="profile-card">
-          <img src="profile.jpg" alt="Wagesh Sharma">
+        <div class="profile-card glass-panel slide-up" style="animation-delay: 0.4s;">
+          <div class="profile-img-container">
+            <img src="profile.jpg" alt="Wagesh Sharma" onerror="this.src='https://via.placeholder.com/150/6366f1/ffffff?text=WS'">
+          </div>
           <h3>Wagesh Sharma</h3>
-          <p>BTech Computer Science Student, DTU</p>
-          <p>Based in Delhi, India</p>
+          <p class="highlight">BTech CS @ DTU</p>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
         </div>
 
-     
-        <section id="contact" class="box">
-          <h2>Contact Me</h2>
-          
-          <div class="contact-item">
-            <div class="icon">📧</div>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:wageshsharma20@gmail.com">wageshsharma20@gmail.com</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="icon">📱</div>
-            <div>
-              <h4>Phone</h4>
-              <a href="tel:+917404554377">+91 7404554377</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="icon">💼</div>
-            <div>
-              <h4>LinkedIn</h4>
-              <a href="https://www.linkedin.com/in/wagesh-sharma-b0983a375/" target="_blank">Connect with me</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="icon">💻</div>
-            <div>
-              <h4>GitHub</h4>
-              <a href="https://github.com/wageshsharma20" target="_blank">View my work</a>
-            </div>
+        <section id="contact" class="glass-panel slide-up" style="animation-delay: 0.5s;">
+          <h2>Let's Connect</h2>
+          <div class="contact-links">
+            <a href="mailto:wageshsharma20@gmail.com" class="contact-item">
+              <div class="icon-box"><i class="fa-regular fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <span>wageshsharma20@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/wageshsharma20" target="_blank" class="contact-item">
+              <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-text">
+                <h4>GitHub</h4>
+                <span>Check out my code</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/wagesh-sharma-b0983a375/" target="_blank" class="contact-item">
+              <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-text">
+                <h4>LinkedIn</h4>
+                <span>Let's network</span>
+              </div>
+            </a>
           </div>
         </section>
 
-        <div class="box small">
-          <p>Always open to opportunities and collaborations!</p>
+        <div class="glass-panel slide-up" style="animation-delay: 0.6s;">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Collaborations</span>
+          </div>
         </div>
       </aside>
+
     </div>
 
-    <footer>© <span id="year"></span> Wagesh Sharma</footer>
+    <footer>
+      <p>© <span id="year"></span> Wagesh Sharma. Built with passion.</p>
+    </footer>
+
   </div>
 
   <script>
