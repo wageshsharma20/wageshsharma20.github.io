@@ -277,13 +277,13 @@ h2 {
   background-size: 4px 100%;
 }
 
-.profile-img-container {
+.profile-img-container img {
   width: 100%;
-  aspect-ratio: 1;
-  margin-bottom: 2rem;
-  border: 4px solid var(--bg);
-  background: var(--bg);
-  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
+  /* Add this line to shift the focal point up */
+  object-position: center 15%; 
+  filter: grayscale(100%);
 }
 
 .profile-img-container img {
