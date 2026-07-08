@@ -26,11 +26,13 @@ export default function Hero() {
         className="absolute inset-0 z-0"
       >
         <div className="w-full h-full relative overflow-hidden">
-          <img
-            src="/hero-bg.jpg"
-            alt="DTU Campus"
-            className="w-full h-full object-cover grayscale contrast-110 blur-[3px] scale-105"
-          />
+          <div className="dither w-full h-full">
+            <img
+              src="/hero-bg.jpg"
+              alt="DTU Campus"
+              className="w-full h-full object-cover grayscale contrast-110 scale-105"
+            />
+          </div>
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
       </motion.div>
