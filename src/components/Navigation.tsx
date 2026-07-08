@@ -32,23 +32,23 @@ export default function Navigation() {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-0 left-0 w-full z-40 px-8 py-8 mix-blend-difference text-[#F6F3EE]"
+      className="fixed top-0 left-0 w-full z-40 px-6 py-6 md:px-8 md:py-8 mix-blend-difference text-[#F6F3EE]"
     >
       <div className="max-w-[1600px] mx-auto flex justify-between items-center">
         <a
           href="#"
-          className="text-lg font-sans font-semibold tracking-wide"
+          className="text-base md:text-lg font-sans font-semibold tracking-wide"
           onMouseEnter={() => setCursor({ active: true, text: "HOME" })}
           onMouseLeave={resetCursor}
         >
           WS.
         </a>
-        <div className="flex gap-8">
+        <div className="flex gap-4 sm:gap-6 md:gap-8">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-sans tracking-widest uppercase hover:opacity-70 transition-opacity"
+              className="text-[10px] sm:text-xs md:text-sm font-sans tracking-widest uppercase hover:opacity-70 transition-opacity"
               onMouseEnter={() => setCursor({ active: true, text: "VIEW" })}
               onMouseLeave={resetCursor}
             >

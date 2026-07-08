@@ -7,7 +7,7 @@ export default function Footer() {
   const { setCursor, resetCursor } = useCursor();
 
   return (
-    <footer id="contact" className="w-full bg-foreground text-background pt-[240px] pb-[80px] px-8 md:px-[80px]">
+    <footer id="contact" className="w-full bg-foreground text-background pt-[120px] md:pt-[240px] pb-12 md:pb-[80px] px-8 md:px-[80px]">
       <div className="max-w-[1600px] mx-auto flex flex-col items-center text-center">
         
         <motion.h2
@@ -15,7 +15,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-serif text-[clamp(60px,8vw,160px)] leading-none tracking-tight mb-24"
+          className="font-serif text-[clamp(60px,8vw,160px)] leading-none tracking-tight mb-16 md:mb-24"
         >
           contact me
         </motion.h2>
@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row gap-4 md:gap-8">
             <a
               href="mailto:wageshsharma20@gmail.com"
-              className="font-sans text-xl tracking-widest hover:opacity-70 transition-opacity"
+              className="font-sans text-base md:text-xl tracking-widest hover:opacity-70 transition-opacity"
               onMouseEnter={() => setCursor({ active: true, text: "EMAIL" })}
               onMouseLeave={resetCursor}
             >
@@ -40,7 +40,7 @@ export default function Footer() {
               href="https://github.com/wageshsharma20"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-xl tracking-widest hover:opacity-70 transition-opacity"
+              className="font-sans text-base md:text-xl tracking-widest hover:opacity-70 transition-opacity"
               onMouseEnter={() => setCursor({ active: true, text: "GITHUB" })}
               onMouseLeave={resetCursor}
             >
@@ -50,7 +50,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/wagesh-sharma-b0983a375/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-xl tracking-widest hover:opacity-70 transition-opacity"
+              className="font-sans text-base md:text-xl tracking-widest hover:opacity-70 transition-opacity"
               onMouseEnter={() => setCursor({ active: true, text: "LINKEDIN" })}
               onMouseLeave={resetCursor}
             >

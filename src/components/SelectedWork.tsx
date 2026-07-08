@@ -6,6 +6,15 @@ import { useCursor } from "@/context/CursorContext";
 const projects = [
   {
     id: "01",
+    name: "Lore",
+    category: "An AI-powered institutional memory system that autonomously captures architectural decisions from GitHub PRs, Jira tickets, and Slack threads into a Cognee hybrid graph-vector memory - enabling engineering teams to query past decisions with full author attribution, automatically block conflicting code at merge time, and surface critical knowledge silos before they become incidents.",
+    year: "2026",
+    tech: "Next.js, FastAPI, Python, Cognee, Gemini AI",
+    image: "/proj-lore.png",
+    link: "https://lore-fsad86q3c-wageshsharma20-9339s-projects.vercel.app/"
+  },
+  {
+    id: "02",
     name: "Karigar Connect",
     category: "Influencer Marketing Platform",
     year: "2026",
@@ -14,7 +23,7 @@ const projects = [
     link: "https://content-generator-hackfluence-seven.vercel.app/"
   },
   {
-    id: "02",
+    id: "03",
     name: "Netra",
     category: "Computer Vision Accessibility",
     year: "2026",
@@ -23,7 +32,16 @@ const projects = [
     link: "https://netra-accessibility-vision.onrender.com/"
   },
   {
-    id: "03",
+    id: "04",
+    name: "Task Tracker",
+    category: "A full-stack Task Tracker web application built using the MERN stack",
+    year: "2026",
+    tech: "MongoDB, Express, React, Node.js",
+    image: "/proj-task-tracker.png",
+    link: "https://mern-stack-task-tracker.vercel.app/"
+  },
+  {
+    id: "05",
     name: "Pneumonia Analysis",
     category: "Prediction System",
     year: "2026",
@@ -32,7 +50,7 @@ const projects = [
     link: "https://pneumonia-prediction-8upq.onrender.com/"
   },
   {
-    id: "04",
+    id: "06",
     name: "Real Estate AVM",
     category: "Automated Valuation Model",
     year: "2026",
@@ -78,25 +96,25 @@ export default function SelectedWork() {
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             >
               {/* Image Container */}
-              <div className="w-full h-[60vh] md:h-[80vh] overflow-hidden bg-[#e0e0e0] relative">
+              <div className="w-full h-[300px] sm:h-[400px] md:h-[80vh] overflow-hidden bg-[#e0e0e0] relative">
                 <motion.img
                   src={project.image}
                   alt={project.name}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] grayscale-[30%] group-hover:grayscale-0"
+                  className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03] grayscale-[30%] group-hover:grayscale-0"
                 />
               </div>
 
               {/* Text Container */}
-              <div className="mt-8 flex flex-col md:flex-row md:items-end justify-between transition-transform duration-500 ease-out group-hover:-translate-y-[5px]">
+              <div className="mt-6 md:mt-8 flex flex-col md:flex-row md:items-end justify-between transition-transform duration-500 ease-out group-hover:-translate-y-[5px]">
                 <div>
-                  <h3 className="font-serif text-[40px] md:text-[60px] leading-none text-foreground tracking-tight">
+                  <h3 className="font-serif text-[32px] sm:text-[40px] md:text-[60px] leading-none text-foreground tracking-tight">
                     {project.name}
                   </h3>
-                  <p className="font-sans text-lg text-secondary mt-2">
+                  <p className="font-sans text-lg text-secondary mt-2 max-w-xl md:max-w-2xl">
                     {project.category}
                   </p>
                 </div>
-                <div className="mt-4 md:mt-0 text-left md:text-right">
+                <div className="mt-4 md:mt-0 text-left md:text-right shrink-0">
                   <p className="font-sans text-sm text-foreground uppercase tracking-widest">
                     {project.year}
                   </p>
