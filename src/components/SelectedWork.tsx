@@ -38,7 +38,7 @@ const projects = [
     year: "2026",
     tech: "Next.js, FastAPI, LangChain, Groq LLM",
     image: "/proj-rag-agent.png",
-    link: "#"
+    link: "https://customer-support-rag-agent.vercel.app/"
   },
   {
     id: "05",
