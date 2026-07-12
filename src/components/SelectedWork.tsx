@@ -33,6 +33,15 @@ const projects = [
   },
   {
     id: "04",
+    name: "Scheduling Assistant",
+    category: "A multi-agent workflow using LangGraph that orchestrates a \"Triage Agent\" and a \"Booking Specialist\" to handle calendar bookings and trigger external actions",
+    year: "2026",
+    tech: "LangGraph, SQLite, Streamlit, Groq API",
+    image: "/proj-scheduling-assistant.png",
+    link: "https://multi-agent-scheduling-assistant.streamlit.app/"
+  },
+  {
+    id: "05",
     name: "Customer Support RAG Agent",
     category: "AI-powered RAG support agent. Built with Next.js, FastAPI, FAISS vector search, and Groq LLMs",
     year: "2026",
@@ -41,7 +50,7 @@ const projects = [
     link: "https://customer-support-rag-agent.vercel.app/"
   },
   {
-    id: "05",
+    id: "06",
     name: "Task Tracker",
     category: "A full-stack Task Tracker web application built using the MERN stack",
     year: "2026",
@@ -50,7 +59,7 @@ const projects = [
     link: "https://mern-stack-task-tracker.vercel.app/"
   },
   {
-    id: "06",
+    id: "07",
     name: "Pneumonia Analysis",
     category: "Prediction System",
     year: "2026",
@@ -59,7 +68,7 @@ const projects = [
     link: "https://pneumonia-prediction-8upq.onrender.com/"
   },
   {
-    id: "07",
+    id: "08",
     name: "Real Estate AVM",
     category: "Automated Valuation Model",
     year: "2026",
